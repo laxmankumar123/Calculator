@@ -29,13 +29,13 @@ public class TestController {
 	@Autowired
 	Employee_data employee_data1;
 	
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	@RequestMapping(value = "/cal", method = RequestMethod.GET)
 	public String newemployee1(Model model) {
 		List<Map<String, Object>> list = employee_data1.findAll();
 		System.out.println("--------for fecth all data" + list);
 		model.addAttribute("messages", list);
         //return "Index_github";
-		return "index";
+		return "Cal";
 	}
 	
 	@RequestMapping(value = "/edit", method = RequestMethod.GET)
