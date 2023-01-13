@@ -134,6 +134,7 @@ div.equal:active {
     </style>
 </head>
 <body>
+    <h6>My calculator<h6>
     <div class="calculator">
         <div class="input" id="input"></div>
         <div class="buttons">
