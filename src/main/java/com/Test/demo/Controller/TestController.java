@@ -38,13 +38,13 @@ public class TestController {
 		return "Cal";
 	}
 	
-	@RequestMapping(value = "/edit", method = RequestMethod.GET)
+	@RequestMapping(value = "/reg", method = RequestMethod.GET)
 	public String newemployee111(Model model) {
 		List<Map<String, Object>> list = employee_data1.findAll();
 		System.out.println("--------for fecth all data" + list);
 		model.addAttribute("messages", list);
         //return "index";
-		return "Add_Edit_Delete";
+		return "Reg";
 		//return "check";
 		//return "Erp";
 	}
